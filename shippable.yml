@@ -6,7 +6,7 @@ jdk:
 build:
   ci:
     #Run test and code coverage and output results to the right folder
-    - ./gradlew clean build
+    - ./gradlew clean build buildDocker
 
   post-ci:
 

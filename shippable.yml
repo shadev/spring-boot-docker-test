@@ -16,7 +16,7 @@ integrations:
           type: ecr
           region: eu-central-1
     notifications:
-      - integrationName: Slack
+      - integrationName: slack
         type: slack
         recipients:
           - "#deployment"

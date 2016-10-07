@@ -5,8 +5,8 @@ jobs:
       - IN: docker-image
 
 
-    - name: deploy-ecr-to-ecs
-      type: deploy
-      steps:
-        - IN: img-manifest
-        - IN: test-ecs
+  - name: deploy-ecr-to-ecs
+    type: deploy
+    steps:
+      - IN: img-manifest
+      - IN: test-ecs

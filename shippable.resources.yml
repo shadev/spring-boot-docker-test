@@ -1,5 +1,12 @@
 resources:
 
+  - name: github
+    type: githubRepo
+    integration: github
+    pointer:
+      sourceName: spring-boot-docker-test
+      branch: master
+
   - name: test-ecs
     type: cluster
     integration: ECS

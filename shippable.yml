@@ -8,6 +8,16 @@ build:
     - ./gradlew clean build
 
   post-ci:
+    - ls -l $SHIPPABLE_BUILD_DIR/build/docker/
+
+  on_success:
+    - cd $SHIPPABLE_BUILD_DIR/build/docker && docker push 740448671927.dkr.ecr.eu-central-1.amazonaws.com/integritynext:latest
+
+  cache: true
+
+  cache_dir_list:
+    - $SHIPPABLE_BUILD_DIR/.gradle
+    - $SHIPPABLE_BUILD_DIR/.git
 
 
 integrations:

@@ -1,0 +1,8 @@
+resources:
+
+  - name: test-ecs
+    type: cluster
+    integration: ECS
+    pointer:
+      sourceName : "default"
+      region: "eu-central-1"

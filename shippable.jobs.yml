@@ -9,4 +9,5 @@ jobs:
     type: deploy
     steps:
       - IN: img-manifest
+        force: true
       - IN: test-ecs

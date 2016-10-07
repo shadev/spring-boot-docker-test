@@ -1,5 +1,11 @@
 resources:
 
+  - name: docker-options
+    type: dockerOptions
+    version:
+      portMappings:
+        - "8080:8080"
+
   - name: docker-image
     type: image
     integration: Amazon-ECR

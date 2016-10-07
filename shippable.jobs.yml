@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: docker-image
+      - IN: docker-options
 
 
   - name: deploy-ecr-to-ecs

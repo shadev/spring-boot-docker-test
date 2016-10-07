@@ -28,7 +28,7 @@ jar {
 
 // tag::task[]
 task buildDocker(type: Docker, dependsOn: build) {
-  push = true
+  push = false
   applicationName = 'integritynext'
   registry = '740448671927.dkr.ecr.eu-central-1.amazonaws.com'
   dockerfile = file('src/main/docker/Dockerfile')

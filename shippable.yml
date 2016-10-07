@@ -5,7 +5,7 @@ jdk:
 
 build:
   ci:
-    - ./gradlew clean build
+    - ./gradlew clean build buildDocker
 
   post-ci:
     - ls -l $SHIPPABLE_BUILD_DIR/build/docker/

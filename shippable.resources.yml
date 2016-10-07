@@ -1,12 +1,5 @@
 resources:
 
-  - name: github
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: "spring-boot-docker-test"
-      branch: master
-
   - name: docker-image
     type: image
     integration: Amazon-ECR

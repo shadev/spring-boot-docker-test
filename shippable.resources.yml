@@ -1,7 +1,7 @@
 resources:
 
   - name: github
-    type: githubRepo
+    type: github
     integration: github
     pointer:
       sourceName: spring-boot-docker-test

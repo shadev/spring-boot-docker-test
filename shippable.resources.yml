@@ -1,7 +1,7 @@
 resources:
 
   - name: github
-    type: github
+    type: scm
     integration: github
     pointer:
       sourceName: spring-boot-docker-test

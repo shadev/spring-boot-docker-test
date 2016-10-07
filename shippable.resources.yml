@@ -1,11 +1,19 @@
 resources:
 
   - name: github
-    type: scm
+    type: gitRepo
     integration: github
     pointer:
-      sourceName: spring-boot-docker-test
+      sourceName: "spring-boot-docker-test"
       branch: master
+
+  - name: docker-image
+    type: image
+    integration: Amazon-ECR
+    pointer:
+      sourceName: "740448671927.dkr.ecr.eu-central-1.amazonaws.com/integritynext"
+    seed:
+      versionName: "latest"
 
   - name: test-ecs
     type: cluster

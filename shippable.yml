@@ -16,3 +16,5 @@ integrations:
         - integrationName: Amazon-ECR
           type: ecr
           region: eu-central-1
+
+cache: true

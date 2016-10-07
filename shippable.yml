@@ -5,8 +5,7 @@ jdk:
 
 build:
   ci:
-    #Run test and code coverage and output results to the right folder
-    - ./gradlew clean build buildDocker
+    - ./gradlew clean build
 
   post-ci:
 
@@ -16,5 +15,14 @@ integrations:
         - integrationName: Amazon-ECR
           type: ecr
           region: eu-central-1
+    notifications:
+      - integrationName: Slack
+        type: slack
+        recipients:
+          - "#deployment"
+        on_success: always
+        on_failure: always
+        on_start: never
+        on_pull_request: never
 
 cache: true

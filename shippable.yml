@@ -29,7 +29,7 @@ integrations:
         - integrationName: "Trigger"
           type: webhook
           payload:
-            - versionName="latest"
+            - versionName=latest
           on_success: always
           on_failure: never
 
